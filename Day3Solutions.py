@@ -6,14 +6,16 @@ grid= ['0,0']
 for i in content:
 	if i == '^':
 		gift= [gift[0],gift[1]+1]
+		grid.append(str(gift))
 	elif i == '<':
 		gift= [gift[0]-1,gift[1]]
+		grid.append(str(gift))
 	elif i == '>':
 		gift= [gift[0]+1,gift[1]]
+		grid.append(str(gift))
 	else:
 		gift= [gift[0],gift[1]-1]
-		
-	if not str(gift[0]) + ',' + str(gift[1]) in grid:
-		grid.append(str(gift[0]) + ',' + str(gift[1]) )
-print(gift)
-print(len(grid))
+		grid.append(str(gift))
+houses=set(grid)
+print(len(houses))
+
