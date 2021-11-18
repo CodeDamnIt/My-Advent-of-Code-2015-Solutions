@@ -1,5 +1,5 @@
 #Part1
-string=str(open("/storage/emulated/0/Download/Day5input.txt").read()).split()
+string=str(open("./Data/Day5input.txt").read()).split()
 Nice=[ ]
 for j in string:
 	x=j.count("a") + j.count("e")+j.count("i") + j.count("o") + j.count("u")
