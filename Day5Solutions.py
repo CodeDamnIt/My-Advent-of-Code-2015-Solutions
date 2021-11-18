@@ -10,3 +10,12 @@ for j in string:
 					Nice.append(j)
 print(len(set(Nice)))
 #Part2
+Nicer=[ ]
+for a in string:
+			for b in range(len(a)-2):
+				if a[b] == a[b+2]:
+					for c in range(len(a)-3):
+						d=a[c:c+2]
+						if d in a[c+2 : ]:
+							Nicer.append(a)				
+print(len(set(Nicer)))
